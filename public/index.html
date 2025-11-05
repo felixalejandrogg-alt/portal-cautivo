@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Cautivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bienvenido al Wi-Fi</h1>
+    <p>Por favor, inicia sesión para continuar.</p>
+
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Usuario" required><br>
+      <input type="password" name="password" placeholder="Contraseña" required><br>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div class="ad-section">
+      <p>Publicidad:</p>
+
+      <a href="/click?ad=1" target="_blank">
+        <img src="/ads/ad1.png" alt="Anuncio 1" class="banner">
+      </a>
+
+      <a href="/click?ad=2" target="_blank">
+        <img src="/ads/ad2.png" alt="Anuncio 2" class="banner">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+

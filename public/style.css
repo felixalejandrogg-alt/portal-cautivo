@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #070707, #8B0000);
+  color: rgb(7, 0, 0); 
+
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.banner {
+  width: 300px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+.ad-section {
+  margin-top: 20px;
+}
+
+.banner {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.banner:hover {
+  transform: scale(1.05);
+}
+
