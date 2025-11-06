@@ -49,9 +49,11 @@ app.get('/click', (req, res) => {
   res.redirect('https://www.google.com'); // redirige a otra web
 });
 
-// Iniciar servidor
-app.listen(3000, () => {
-  console.log('Servidor funcionando en: http://localhost:3000');
+// Iniciar servidor (Render asigna el puerto automáticamente)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Servidor funcionando en el puerto ${PORT}`);
 });
 
 
